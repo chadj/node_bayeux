@@ -1,0 +1,39 @@
+1
+==
+[{"version": "1.0", "minimumVersion": "0.9", "channel":
+"/meta/handshake", "supportedConnectionTypes": ["long-polling"], "id":
+1}]
+
+[{"id":"1","minimumVersion":"0.9","supportedConnectionTypes":["long-polling","callback-polling"],"successful":true,"channel":"/meta/handshake","advice":{"reconnect":"retry","interval":0,"timeout":30000},"clientId":"187y517u6u51w7fahs","version":"1.0"}]
+
+2
+==
+[{"channel": "/meta/connect", "connectionType": "long-polling", "id":
+2, "clientId": "187y517u6u51w7fahs"}]
+
+[{"id":"2","successful":true,"advice":{"reconnect":"retry","interval":0,"timeout":30000},"channel":"/meta/connect"}]
+
+3
+==
+[{"channel": "/wad/demo", "data": {"type": "loc", "client": {"id":
+null, "x": "775.5", "y": "524.5"}}, "id": 3, "clientId":
+"187y517u6u51w7fahs"}]
+
+[{"id":"3","successful":true,"channel":"/wad/demo"}]
+
+4
+==
+[{"channel": "/meta/connect", "connectionType": "long-polling", "id":
+6, "clientId": "187y517u6u51w7fahs"}]
+
+[{"id":"6","successful":true,"channel":"/meta/connect"}]
+
+5
+==
+[{"channel": "/meta/subscribe", "subscription": "/wad/demo", "id": 4,
+"clientId": "187y517u6u51w7fahs"}, {"channel": "/wad/demo", "data":
+{"type": "join", "client": {"id": "187y517u6u51w7fahs", "x": "775.5",
+"y": "524.5"}}, "id": 5, "clientId": "187y517u6u51w7fahs"}]
+
+[{"id":"4","successful":true,"subscription":"/wad/demo","channel":"/meta/subscribe"},{"id":"5","successful":true,"channel":"/wad/demo"},{"id":"5","data":{"type":"list","clients":{"187y517u6u51w7fahs":{"class":"Thingy","id":"187y517u6u51w7fahs","y":524.5,"x":775.5}}},"channel":"/wad/demo"},{"id":5,"data":{"client":{"id":"187y517u6u51w7fahs","y":"524.5","x":"775.5"},"type":"join"},"channel":"/wad/demo"}]
+
